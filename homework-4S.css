@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Tahoma;
+}
+* :root,
+* body {
+  height: 100%;
+}
+* :root .wrapper,
+* body .wrapper {
+  width: 980px;
+  margin: 0 auto;
+  border: 1px solid #1678be;
+}
+* :root .wrapper .title,
+* body .wrapper .title {
+  height: 32px;
+  line-height: 32px;
+  color: white;
+  padding-left: 20px;
+  background: linear-gradient(to bottom, #379bd7, #1678be);
+  border-radius: 5px 5px 0 0;
+}
+* :root .wrapper .content,
+* body .wrapper .content {
+  box-sizing: border-box;
+  padding: 40px 0 50px;
+}
+* :root .wrapper .content form,
+* body .wrapper .content form {
+  font-size: 12px;
+}
+* :root .wrapper .content form input::placeholder,
+* body .wrapper .content form input::placeholder {
+  font-size: 12px;
+  color: #aaaaaa;
+}
+* :root .wrapper .content form div:not(:first-of-type),
+* body .wrapper .content form div:not(:first-of-type) {
+  margin-top: 5px;
+}
+* :root .wrapper .content form .password .password-rank,
+* body .wrapper .content form .password .password-rank {
+  display: inline-block;
+  width: 40px;
+  height: 6px;
+  background-color: #999999;
+  margin-right: 1px;
+}
+* :root .wrapper .content form .password .password-rank:first-of-type,
+* body .wrapper .content form .password .password-rank:first-of-type {
+  margin-left: 5px;
+}
+* :root .wrapper .content form .password .danger,
+* body .wrapper .content form .password .danger {
+  background-color: #ff0000;
+}
+* :root .wrapper .content form .radio-box .radio-item,
+* body .wrapper .content form .radio-box .radio-item {
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 380px;
+}
+* :root .wrapper .content form .sex-radio,
+* body .wrapper .content form .sex-radio {
+  height: 30px;
+  line-height: 30px;
+}
+* :root .wrapper .content form .tips,
+* body .wrapper .content form .tips {
+  content: '6-30位字母、数字或"_",字母开头';
+  color: #ff7f00;
+  margin-left: 5px;
+}
+* :root .wrapper .content form .tips.rules,
+* body .wrapper .content form .tips.rules {
+  text-decoration: underline;
+}
+* :root .wrapper .content form .name,
+* body .wrapper .content form .name {
+  position: relative;
+}
+* :root .wrapper .content form .name .tips-value,
+* body .wrapper .content form .name .tips-value {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 5px 5px 5px 20px;
+  right: 10px;
+  border: 1px solid #2aabd2;
+  width: 330px;
+  line-height: 18px;
+  background-color: white;
+}
+* :root .wrapper .content form .left-label,
+* body .wrapper .content form .left-label {
+  display: block;
+  float: left;
+  width: 375px;
+  height: 30px;
+  line-height: 30px;
+  padding-right: 5px;
+  text-align: right;
+}
+* :root .wrapper .content form .left-label::after,
+* body .wrapper .content form .left-label::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+* :root .wrapper .content form .text-input,
+* body .wrapper .content form .text-input {
+  box-sizing: border-box;
+  padding-left: 5px;
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+}
+* :root .wrapper .content form #cre,
+* body .wrapper .content form #cre,
+* :root .wrapper .content form #pass,
+* body .wrapper .content form #pass,
+* :root .wrapper .content form #country,
+* body .wrapper .content form #country {
+  width: 200px;
+  height: 30px;
+}
+* :root .wrapper .content form .ness:before,
+* body .wrapper .content form .ness:before {
+  display: inline-block;
+  content: "*";
+  color: red;
+  font-size: 16px;
+  text-align: center;
+  width: 20px;
+}
+* :root .wrapper .content form .read,
+* body .wrapper .content form .read {
+  height: 30px;
+  line-height: 30px;
+}
+* :root .wrapper .content form .next-btn,
+* body .wrapper .content form .next-btn {
+  text-align: center;
+}
+* :root .wrapper .content form .next-btn button,
+* body .wrapper .content form .next-btn button {
+  width: 120px;
+  height: 30px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff8000;
+  margin-top: 50px;
+}

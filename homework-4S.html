@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12306</title>
+    <link rel="stylesheet" href="homework-4S.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="title">
+        账户信息
+    </div>
+    <div class="content">
+        <form action="">
+            <div class="username">
+                <label for="" class="ness left-label">用 户 名：</label>
+                <input type="text" class="text-input" placeholder="用户名设置成功后不可修改">
+                <span class="tips">6-30位字母、数字或"_",字母开头</span>
+            </div>
+            <div class="password">
+                <label for="" class="ness left-label">登录密码：</label>
+                <input type="password" class="text-input" placeholder="6-20位字母、数字或符号">
+                <span class="password-rank danger"></span><span class="password-rank"></span><span class="password-rank"></span>
+            </div>
+            <div class="password-again">
+                <label for="" class="ness left-label">确认密码：</label>
+                <input type="password" class="text-input" placeholder="再次输入您的登录密码">
+            </div>
+            <div class="credential">
+                <label for="" class="ness left-label">证件类型：</label>
+                <select name="cre" id="cre">
+                    <option class="op" value="ch">中国居民身份证</option>
+                    <option class="op" value="ga">港澳居民来往内地通行证</option>
+                    <option class="op" value="tw">台湾居民来往大陆通行证</option>
+                    <option class="op" value="hz">护照</option>
+                </select>
+            </div>
+            <div class="radio-box">
+                <div class="radio-item">
+                    <input type="radio" name="cre" id="cre1" value="ch" checked>
+                    <label for="cre1">中国居民身份证</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio"  name="cre" id="cre2" value="foreign">
+                    <label for="cre2">外国人永久居留身份证</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio"  name="cre" id="cre3" value="ga">
+                    <label for="cre3">港澳台居民居住证</label>
+                </div>
+            </div>
+            <div class="name">
+                <label for="" class="ness left-label">姓 名：</label>
+                <input type="text" class="text-input" placeholder="请输入姓名">
+                <span class="tips rules">姓名填写规则</span><span class="tips">（用于身份核验，请正确填写）</span>
+            </div>
+            <div class="id">
+                <label for="" class="ness left-label">证件号码：</label>
+                <input type="text" class="text-input" placeholder="请输入您的证件号码">
+                <span class="tips">（用于身份核验，请正确填写）</span>
+            </div>
+            <div class="email">
+                <label for="" class="left-label">邮箱：</label>
+                <input type="email" class="text-input" placeholder="请正确填写邮箱地址">
+            </div>
+            <div class="telephone">
+                <label for="" class="ness left-label">手机号码（+86）：</label>
+                <input type="text" class="text-input" placeholder="请输入您的手机号码">
+                <span class="tips">请正确填写手机号码，稍后将向该手机号码发送短信验证码</span>
+            </div>
+            <div class="passenger-type">
+                <label for="" class="ness left-label">旅客类型：</label>
+                <select name="pass-type" id="pass">
+                    <option value="man">成人</option>
+                    <option value="child">儿童</option>
+                    <option value="student">学生</option>
+                    <option value="police">残疾军人、伤残人民警察</option>
+                </select>
+            </div>
+            <div class="read">
+                <input type="checkbox" id="ck">
+                <label class="left-label"></label>
+                <label for="ck">我已阅读并同意遵守</label>
+                <a href="https://kyfw.12306.cn/otn/regist/rule;jsessionid=8BEEDE8AB0941B3049F8D69C46BA84FE">《中国铁路客户服务中心网站服务条款》</a>
+                <a href="https://kyfw.12306.cn/otn/gonggao/privacyPolicy_web.html;jsessionid=8BEEDE8AB0941B3049F8D69C48BA84FE">《隐私权政策》</a>
+            </div>
+            <div class="next-btn">
+                <button>下一步</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+<script src="../../jquery-3.3.1.js"></script>
+<script src="homework-4S.js"></script>
+</html>

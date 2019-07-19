@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration:none;
+  font-family: Tahoma;
+  :root,body{
+    height: 100%;
+    .wrapper{
+      width: 980px;
+      margin: 0 auto;
+      border: 1px solid #1678be;
+      // 顶部标题
+      .title{
+        height: 32px;
+        line-height: 32px;
+        color: white;
+        padding-left: 20px;
+        background: linear-gradient(to bottom , #379bd7, #1678be);
+        border-radius: 5px 5px 0 0;
+      }
+      // 表单内容区
+      .content{
+        box-sizing: border-box;
+        padding: 40px 0 50px;
+        form{
+          font-size: 12px;
+          input::placeholder{
+            font-size: 12px;
+            color: #aaaaaa;
+          }
+          div:not(:first-of-type){
+            margin-top: 5px;
+          }
+
+          // 密码
+          .password{
+            .password-rank{
+              display: inline-block;
+              width: 40px;
+              height: 6px;
+              background-color: #999999;
+              margin-right: 1px;
+            }
+            .password-rank:first-of-type{
+              margin-left: 5px;
+            }
+            .danger{
+              background-color: #ff0000;
+            }
+          }
+
+          // 单选按钮组
+          .radio-box{
+            .radio-item{
+              width: 200px;
+              height: 30px;
+              line-height: 30px;
+              margin-left: 380px;
+            }
+          }
+
+          // 性别单选按钮
+          .sex-radio{
+            height: 30px;
+            line-height: 30px;
+          }
+
+          // 输入框末尾文字提示
+          .tips{
+            content: '6-30位字母、数字或"_",字母开头';
+            color: #ff7f00;
+            margin-left: 5px;
+          }
+          .tips.rules{
+            text-decoration: underline;
+          }
+
+          // 姓名填写规则提示框
+          .name{
+            position: relative;
+            .tips-value{
+              position: absolute;
+              box-sizing: border-box;
+              padding: 5px 5px 5px 20px;
+              right: 10px;
+              border: 1px solid #2aabd2;
+              width: 330px;
+              line-height: 18px;
+              background-color: white;
+            }
+          }
+
+          // 左侧说明文字
+          .left-label{
+            display: block;
+            float: left;
+            width: 375px;
+            height: 30px;
+            line-height: 30px;
+            padding-right: 5px;
+            text-align: right;
+          }
+          .left-label::after{
+            display: block;
+            content: "";
+            clear: both;
+          }
+
+          // 输入框
+          .text-input{
+            box-sizing: border-box;
+            padding-left: 5px;
+            display: inline-block;
+            width: 200px;
+            height: 30px;
+          }
+
+          // 下拉框
+          #cre,#pass,#country{
+            width: 200px;
+            height: 30px;
+          }
+
+          // 星号伪元素
+          .ness:before {
+            display: inline-block;
+            content: "*";
+            color: red;
+            font-size: 16px;
+            text-align: center;
+            width: 20px;
+          }
+
+          // 同意条款
+          .read{
+            height: 30px;
+            line-height: 30px;
+          }
+
+          // 按钮
+          .next-btn{
+            text-align: center;
+          }
+          .next-btn button{
+            width: 120px;
+            height: 30px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff8000;
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+  }
+}
